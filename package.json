@@ -10,8 +10,8 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node ./src/server.js",
-    "postinstall": "NODE_ENV=production webpack -p",
+    "start": "node ./dist/index.js",
+    "postinstall": "NODE_ENV=production",
 
     "build": "npx webpack --mode production",
     "dev": "npx webpack serve --mode development",
