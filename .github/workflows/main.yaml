@@ -1,7 +1,7 @@
 name: Build and Deploy
 on:
   pull_request:
-    branches: [main]
+    branches: [NAME_BRANCHE_FOR_DEPLOY]
 jobs:
   check-build-deploy:
     runs-on: ubuntu-latest

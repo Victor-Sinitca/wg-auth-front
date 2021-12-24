@@ -9,6 +9,8 @@ import { authAPI } from '@api/authApi';
 
 const LocalBaseURL = `http://localhost:7000/api/`;
 const backEndBaseURL = `https://wg-force3-backend.herokuapp.com/api/`;
+const authBackEndBaseURL = `https://wg-server-auth.herokuapp.com/api/`;
+
 
 /** reverse geocode URL */
 const geoLocBaseURL = 'https://eu1.locationiq.com/v1/';
@@ -18,7 +20,7 @@ const ipLocBaseURL = 'http://ipwhois.app/json/';
 
 /** axios instance for server and database */
 const backEndInstance = axios.create({
-  baseURL: LocalBaseURL,
+  baseURL: authBackEndBaseURL,
   withCredentials: true,
 } as AxiosRequestConfig);
 
