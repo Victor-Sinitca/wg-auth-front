@@ -10,11 +10,11 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "npx webpack serve --mode development",
+    "dev": "npm webpack serve --mode development",
     "start": "node dist/index.js",
-    "build": "npx webpack --mode production",
+    "build": "npm webpack --mode production",
     "docs": "npx typedoc --options typedoc.json",
-    "postinstall": "npx run build",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
