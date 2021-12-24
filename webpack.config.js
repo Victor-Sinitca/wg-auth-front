@@ -12,7 +12,7 @@ const src = resolve(__dirname, 'src'); // save src folder
 module.exports = {
   entry: resolve(src, 'page/main.ts'), // this is entry point for webpack
   output: {
-    path: path.resolve(__dirname, "dist"),
+    //path: path.resolve(__dirname, "dist"),
     filename: 'index.js', // this is name of output js file after build
     clean: true, // clear the output directory on every build
   },
